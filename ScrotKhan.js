@@ -1,4 +1,4 @@
-const ver = "V3.1.2";
+const ver = "V3.2.3";
 let isDev = false;
 
 const repoPath = `https://raw.githubusercontent.com/davizinzknVkv/ScrotKhan1/refs/heads/${isDev ? "dev/" : "main/"}`;
@@ -121,4 +121,5 @@ loadScript('https://cdn.jsdelivr.net/npm/toastify-js', 'toastifyPlugin')
     setupMain();
     
     console.clear();
+
 });
