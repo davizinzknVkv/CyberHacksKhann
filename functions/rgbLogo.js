@@ -8,6 +8,7 @@ plppdo.on('domChanged', () => {
             33% { fill: rgb(0, 255, 0); }
             66% { fill: rgb(0, 0, 255); }
             100% { fill: rgb(255, 0, 0); }
+            100% { fill: rgba(0, 217, 255, 1); }
         }   
     `;
     if(features.rgbLogo&&khanLogo){
