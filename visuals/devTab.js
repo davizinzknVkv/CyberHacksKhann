@@ -1,5 +1,5 @@
 plppdo.on('domChanged', () => {
-    if (document.getElementById('khanwareTab')) return;
+    if (document.getElementById('ScrotKhanTab')) return;
 
     function createTab(name, href = '#') { 
         const li = document.createElement('li'); 
@@ -11,21 +11,21 @@ plppdo.on('domChanged', () => {
     if (!nav) return;
 
     const section = document.createElement('section');
-    section.id = 'khanwareTab';
+    section.id = 'ScrotKhanTab';
     section.className = '_1ozlbq6';
-    section.innerHTML = '<h2 class="_18undph9">Khanware</h2>';
+    section.innerHTML = '<h2 class="_18undph9">ScrotKhan</h2>';
 
     const ul = document.createElement('ul');
     const devTab = createTab('Developer', '#');
     
     devTab.querySelector('a').addEventListener('click', (e) => {
         e.preventDefault();
-        window.khanwareWin = window.open("", "_blank");
-        if (window.khanwareWin) {
-            window.khanwareWin.document.write(`
+        window.ScrotKhanWin = window.open("", "_blank");
+        if (window.ScrotKhanWin) {
+            window.ScrotKhanWin.document.write(`
                 <html>
                 <head>
-                    <title>Khanware Developer</title>
+                    <title>ScrotKhan Developer</title>
                     <style>
                         body { 
                             font-family: Arial, sans-serif; 
@@ -111,9 +111,9 @@ plppdo.on('domChanged', () => {
 });
 
 window.createToggle = function(name, desc, varName, toggled = false) {
-    if (!window.khanwareWin || window.khanwareWin.closed) return;
+    if (!window.ScrotKhanWin || window.ScrotKhanWin.closed) return;
 
-    const toggleContainer = window.khanwareWin.document.getElementById('toggles');
+    const toggleContainer = window.ScrotKhanWin.document.getElementById('toggles');
     if (!toggleContainer) return;
 
     const toggleId = `toggle-${varName}`;
@@ -136,9 +136,9 @@ window.createToggle = function(name, desc, varName, toggled = false) {
     toggleContainer.appendChild(toggleElement);
 };
 window.debug = function(message) {
-    if (!window.khanwareWin || window.khanwareWin.closed || !window.debugMode) return;
+    if (!window.ScrotKhanWin || window.ScrotKhanWin.closed || !window.debugMode) return;
     
-    const debugBox = window.khanwareWin.document.getElementById('debugBox');
+    const debugBox = window.ScrotKhanWin.document.getElementById('debugBox');
     if (debugBox) {
         debugBox.innerHTML += message + '\n';
         debugBox.scrollTop = debugBox.scrollHeight;
