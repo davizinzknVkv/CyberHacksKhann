@@ -51,7 +51,7 @@
     /* Misc Styles */
     document.head.appendChild(Object.assign(document.createElement("style"),{innerHTML:"@font-face{font-family:'MuseoSans';src:url('https://corsproxy.io/?url=https://r2.e-z.host/4d0a0bea-60f8-44d6-9e74-3032a64a9f32/ynddewua.ttf')format('truetype')}" }));
     document.head.appendChild(Object.assign(document.createElement('style'),{innerHTML:"::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: #f1f1f1; } ::-webkit-scrollbar-thumb { background: #888; border-radius: 10px; } ::-webkit-scrollbar-thumb:hover { background: #555; }"}));
-    document.querySelector("link[rel~='icon']").href = 'https://github.com/davizinzknVkv/ScrotKhan1/blob/main/ZKN.png';
+    document.querySelector("link[rel~='icon']").href = 'https://media.discordapp.net/attachments/1389389715593232457/1408987538064146432/ZKN.png?ex=68abbd66&is=68aa6be6&hm=7e67bb7325397b6ecd2dce8ca1e9c22e793319b0d4c4d918ecdd99444485f6a2&=&format=webp&quality=lossless&width=816&height=583';
 
     /* Emmiter */
     class EventEmitter{constructor(){this.events={}}on(t,e){"string"==typeof t&&(t=[t]),t.forEach(t=>{this.events[t]||(this.events[t]=[]),this.events[t].push(e)})}off(t,e){"string"==typeof t&&(t=[t]),t.forEach(t=>{this.events[t]&&(this.events[t]=this.events[t].filter(t=>t!==e))})}emit(t,...e){this.events[t]&&this.events[t].forEach(t=>{t(...e)})}once(t,e){"string"==typeof t&&(t=[t]);let s=(...i)=>{e(...i),this.off(t,s)};this.on(t,s)}};
