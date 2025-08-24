@@ -3,7 +3,7 @@ const phrases = [
     "[🌿] SCROTKAHN on top.",
     "[🌿] davizinzkn said hello!",
     "[🌿] Deus, eu queria ter o ScrotKhan.",
-    "[🌿] Fique bom, pegue Khanware!",
+    "[🌿] Fique bom, pegue ScrotKhan!",
     "[🌿] davizinzkn.shop goes brrrrr" 
 ];
 
