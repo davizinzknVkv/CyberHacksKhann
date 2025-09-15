@@ -1,4 +1,4 @@
-# 🌿 Scrotkhan Baseado no  ScrotKhan
+# 🌿 Scrotkhan ALPHA
 ### The most advanced Khan Academy cheat.
 
 🙂 Stable:
