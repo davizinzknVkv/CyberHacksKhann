@@ -1,3 +1,4 @@
+const logoUrl = "https://github.com/davizinzknVkv/ScrotKhan1/blob/main/logo.png";
 const setFeatureByPath = (path, value) => { let obj = window; const parts = path.split('.'); while (parts.length > 1) obj = obj[parts.shift()]; obj[parts[0]] = value; }
 
 function addFeature(features) {
@@ -69,7 +70,7 @@ Object.assign(watermark.style, {
 
 if (device.mobile) watermark.style.left = '55%'
 
-watermark.innerHTML = `<span style="text-shadow: -1px 0.5px 0 #0099ffff, -2px 0px 0 #01233aff;">ZKN</span> <span style="color:gray; padding-left:2px; font-family: Arial, sans-serif; font-size:10px">${ver}</span>`;
+watermark.innerHTML = `<span style="text-shadow: -1px 0.5px 0rgb(96, 8, 148), -2px 0px 0 #01233aff;">CyberHacks</span> <span style="color:gray; padding-left:2px; font-family: Arial, sans-serif; font-size:10px">${ver}</span>`;
 
 document.body.appendChild(watermark);
 
