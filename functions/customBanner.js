@@ -1,10 +1,11 @@
 const phrases = [ 
-    "[🌿] Chora Seduc Lixo.",
-    "[🌿] SCROTKAHN on top.",
+    "[🌿] Chora Seduc Lixo./nao tenta derruba felipe seduc ",
+    "[🌿] Fuck Gov",
+    "[🌿] CyberHacksKhan on top.",
     "[🌿] davizinzkn said hello!",
     "[🌿] Deus, eu queria ter o ScrotKhan.",
     "[🌿] Fique bom, pegue ScrotKhan!",
-    "[🌿] davizinzkn.shop goes brrrrr" 
+    "[🌿] cyberhackskhan.space goes brrrrr" 
 ];
 
 setInterval(() => { 
