@@ -4,10 +4,10 @@ plppdo.on('domChanged', () => {
     styleElement.className = "RGBLogo"
     styleElement.textContent = `
         @keyframes colorShift {
-            0% { fill: rgb(255, 0, 0); }
+            0% { fill: rgb(183, 0, 255); }
             33% { fill: rgb(0, 255, 0); }
             66% { fill: rgb(0, 0, 255); }
-            100% { fill: rgb(255, 0, 0); }
+            100% { fill: rgb(8, 167, 79); }
             100% { fill: rgba(0, 217, 255, 1); }
         }   
     `;
