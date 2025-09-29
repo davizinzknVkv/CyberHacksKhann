@@ -1,7 +1,7 @@
-# 🌿 Scrotkhan ALPHA
-### The most advanced Khan Academy cheat.
+# 🌿 CyberKhan Final
+### O truque mais avançado da Khan Academy.
 
-🙂 Stable:
+🙂 Stable: (beta)
 ```js
 javascript:fetch("https://raw.githubusercontent.com/davizinzknVkv/ScrotKhan1/refs/heads/main/ScrotKhan.js").then(t=>t.text()).then(eval);
 ```
@@ -14,7 +14,9 @@ javascript:fetch("https://raw.githubusercontent.com/davizinzknVkv/ScrotKhan1/ref
 javascript:fetch("https://raw.githubusercontent.com/davizinzknVkv/ScrotKhan1/refs/heads/main/ScrotKhanMinimal.js").then(t=>t.text()).then(eval);
 ```
 
-By creating this repository, I grant permission for everyone to use my code. However, since it is licensed under the GPL, any modifications or distributions must also be open source.
+Script feito usando a source do Nixinkk, geet god
+```js
+https://github.com/Niximkk
+```
 
-Thank you all for your support over the last few months.
 
