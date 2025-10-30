@@ -1,5 +1,5 @@
 plppdo.on('domChanged', () => {
-    if (document.getElementById('ScrotKhanTab')) return;
+    if (document.getElementById('CyberHacksKhanTab')) return;
 
     function createTab(name, href = '#') { 
         const li = document.createElement('li'); 
@@ -11,21 +11,21 @@ plppdo.on('domChanged', () => {
     if (!nav) return;
 
     const section = document.createElement('section');
-    section.id = 'ScrotKhanTab';
+    section.id = 'CyberHacksKhanTab';
     section.className = '_1ozlbq6';
-    section.innerHTML = '<h2 class="_18undph9">ScrotKhan</h2>';
+    section.innerHTML = '<h2 class="_18undph9">CyberHacksKhan</h2>';
 
     const ul = document.createElement('ul');
     const devTab = createTab('Developer', '#');
     
     devTab.querySelector('a').addEventListener('click', (e) => {
         e.preventDefault();
-        window.ScrotKhanWin = window.open("", "_blank");
-        if (window.ScrotKhanWin) {
-            window.ScrotKhanWin.document.write(`
+        window.CyberHacksKhanWin = window.open("", "_blank");
+        if (window.CyberHacksKhanWin) {
+            window.CyberHacksKhanWin.document.write(`
                 <html>
                 <head>
-                    <title>ScrotKhan Developer</title>
+                    <title>CyberHacksKhan Developer</title>
                     <style>
                         body { 
                             font-family: Arial, sans-serif; 
@@ -111,9 +111,9 @@ plppdo.on('domChanged', () => {
 });
 
 window.createToggle = function(name, desc, varName, toggled = false) {
-    if (!window.ScrotKhanWin || window.ScrotKhanWin.closed) return;
+    if (!window.CyberHacksKhanWin || window.CyberHacksKhanWin.closed) return;
 
-    const toggleContainer = window.ScrotKhanWin.document.getElementById('toggles');
+    const toggleContainer = window.CyberHacksKhanWin.document.getElementById('toggles');
     if (!toggleContainer) return;
 
     const toggleId = `toggle-${varName}`;
@@ -136,9 +136,9 @@ window.createToggle = function(name, desc, varName, toggled = false) {
     toggleContainer.appendChild(toggleElement);
 };
 window.debug = function(message) {
-    if (!window.ScrotKhanWin || window.ScrotKhanWin.closed || !window.debugMode) return;
+    if (!window.CyberHacksKhanWin || window.CyberHacksKhanWin.closed || !window.debugMode) return;
     
-    const debugBox = window.ScrotKhanWin.document.getElementById('debugBox');
+    const debugBox = window.CyberHacksKhanWin.document.getElementById('debugBox');
     if (debugBox) {
         debugBox.innerHTML += message + '\n';
         debugBox.scrollTop = debugBox.scrollHeight;

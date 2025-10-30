@@ -13,7 +13,7 @@ let lastFrameTime = performance.now(), frameCount = 0, fps = 0;
 
 const getTime = () => new Date().toLocaleTimeString();
 const update = async () => statsPanel.innerHTML = `
-    <span style="text-shadow: -1px 0.5px 0 #p, -2px 0px 0rgb(155, 4, 255);">CyberHacks</span>
+    <span style="text-shadow: -1px 0.5px 0 #p, -2px 0px 0rgb(55, 167, 204);">CyberHacks</span>
     <span style="margin: 0 8px;">|</span><span>${fps}fps</span>
     <span style="margin: 0 8px;">|</span><span>${await getPing()}ms</span>
     <span style="margin: 0 8px;">|</span><span>${getTime()}</span>
@@ -29,3 +29,7 @@ statsPanel.onmouseup = () => { isDragging = false; statsPanel.style.transform = 
 document.onmousemove = e => { if (isDragging) { Object.assign(statsPanel.style, { left: `${Math.max(0, Math.min(e.clientX - offsetX, window.innerWidth - statsPanel.offsetWidth))}px`, top: `${Math.max(0, Math.min(e.clientY - offsetY, window.innerHeight - statsPanel.offsetHeight))}px` }); }};
 
 if(device.mobile) plppdo.on('domChanged', () => window.location.href.includes("khanacademy.org/profile") ? statsPanel.style.display = 'flex' : statsPanel.style.display = 'none' );
+
+
+
+
