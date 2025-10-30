@@ -1,4 +1,4 @@
-const logoUrl = "https://github.com/davizinzknVkv/ScrotKhan1/blob/main/logo.png";
+const logoUrl = "https://github.com/davizinzknVkv/CYBERHACKSKHAN/blob/main/logo.png";
 const setFeatureByPath = (path, value) => { let obj = window; const parts = path.split('.'); while (parts.length > 1) obj = obj[parts.shift()]; obj[parts[0]] = value; }
 
 function addFeature(features) {

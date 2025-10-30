@@ -1,7 +1,7 @@
 const ver = "V4.2.9";
 let isDev = false;
 
- const logoUrl = "https://github.com/davizinzknVkv/ScrotKhan1/blob/main/logo.png";
+ const logoUrl = "https://github.com/davizinzknVkv/CYBERHACKSKHAN/blob/main/logo.png";
  const repoPath = `https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/refs/heads/${isDev ? "dev/" : "main/"}`;
 
 let device = {
