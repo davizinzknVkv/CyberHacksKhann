@@ -92,10 +92,10 @@ Object.assign(dropdownMenu.style, {
 dropdownMenu.innerHTML = `
     <style>
         input[type="checkbox"] {appearance: none; width: 15px; height: 15px; background-color: #153F4D;
-        border: 1px solid #acacac; border-radius: 3px; margin-right: 5px; cursor: pointer;}
+        border: 1px solid #45C6D1; border-radius: 3px; margin-right: 5px; cursor: pointer;}
         input[type="checkbox"]:checked {background-color: #45C6D1; border-color: #45C6D1;}
         input[type="text"], input[type="number"], input[type="range"] {width: calc(100% - 10px); border: 1px solid #153F4D; 
-        color: white; accent-color: #45C6D1; background-color: #45C6D1; padding: 3px; border-radius: 3px; background: none;}
+        color: white; accent-color: #45C6D1; background-color: #45C6D1; padding: 5px; border-radius: 5px; background: flex;}
         label {display: flex; align-items: center; color: #153F4D; padding-top: 3px;}
     </style>
 `;
