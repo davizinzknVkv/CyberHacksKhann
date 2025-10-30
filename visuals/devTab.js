@@ -23,7 +23,7 @@ plppdo.on('domChanged', () => {
         window.CyberHacksKhanWin = window.open("", "_blank");
         if (window.CyberHacksKhanWin) {
             window.CyberHacksKhanWin.document.write(`
-    <html>
+                <html>
                 <head>
                     <title>CyberHacksKhan Developer</title>
                     <style>

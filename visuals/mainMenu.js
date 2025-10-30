@@ -1,4 +1,4 @@
-const logoUrl = "https://github.com/davizinzknVkv/CYBERHACKSKHAN/blob/main/logo.png";
+const logoUrl = "https://github.com/davizinzknVkv/ScrotKhan1/blob/main/logo.png";
 const setFeatureByPath = (path, value) => { let obj = window; const parts = path.split('.'); while (parts.length > 1) obj = obj[parts.shift()]; obj[parts[0]] = value; }
 
 function addFeature(features) {
@@ -83,7 +83,7 @@ document.addEventListener('mousemove', e => { if (isDragging) { let newX = Math.
 
 /* Dropdown */
 Object.assign(dropdownMenu.style, {
-    position: 'absolute', top: '100%', left: '0', width: '160px', backgroundColor: '#45C6D1',
+    position: 'absolute', top: '100%', left: '0', width: '160px', backgroundColor: 'rgba(0,0,0,0.3)',
     borderRadius: '10px', color: 'white', fontSize: '13px', fontFamily: 'Monospace, sans-serif',
     display: 'none', flexDirection: 'column', zIndex: '1000', padding: '5px', cursor: 'default',
     userSelect: 'none', transition: 'transform 0.3s ease', backdropFilter: 'blur(2px)', WebkitBackdropFilter: 'blur(2px)'
@@ -98,7 +98,8 @@ dropdownMenu.innerHTML = `
         color: white; accent-color: #45C6D1; background-color: #45C6D1; padding: 3px; border-radius: 3px; background: none;}
         label {display: flex; align-items: center; color: #153F4D; padding-top: 3px;}
     </style>
-`;  
+`;
+
 watermark.appendChild(dropdownMenu);
 
 let featuresList = [
