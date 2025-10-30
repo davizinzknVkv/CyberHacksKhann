@@ -6,10 +6,10 @@ const baseSelectors = [
     `._awve9b`
 ];
 
-khanwareDominates = true;
+CYBERHACKSKHANDominates = true;
 
 (async () => { 
-    while (khanwareDominates) {
+    while (CYBERHACKSKHANDominates) {
         if (features.autoAnswer && features.questionSpoof) {
             
             const selectorsToCheck = [...baseSelectors];
