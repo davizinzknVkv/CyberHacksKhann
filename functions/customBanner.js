@@ -1,11 +1,11 @@
 const phrases = [ 
-    "[🤬🎃] Chora Seduc Lixo./nao tenta derruba felipe seduc",
-    "[🤬🎃] Fuck Gov",
-    "[🤬🎃] CyberHacksKhan on top.",
-    "[🤬🎃] davizinzkn said hello!",
-    "[🤬🎃] Deus, eu queria ter o CyberHacks.",
-    "[🤬🎃] Fique bom, pegue CyberHacksKhan!",
-    "[🤬🎃] cyberhackskhan.space goes brrrrr" 
+    "[🎃] Chora Seduc Lixo./nao tenta derruba felipe seduc",
+    "[🎃] Fuck Gov",
+    "[🎃] CyberHacksKhan on top.",
+    "[🎃] davizinzkn said hello!",
+    "[🎃] Deus, eu queria ter o CyberHacks.",
+    "[🎃] Fique bom, pegue CyberHacksKhan!",
+    "[🎃] cyberhackskhan.space goes brrrrr" 
 ];
 
 setInterval(() => { 
