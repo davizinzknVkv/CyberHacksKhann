@@ -23,7 +23,7 @@ plppdo.on('domChanged', () => {
         window.CyberHacksKhanWin = window.open("", "_blank");
         if (window.CyberHacksKhanWin) {
             window.CyberHacksKhanWin.document.write(`
-                <html>
+    <html>
                 <head>
                     <title>CyberHacksKhan Developer</title>
                     <style>
@@ -33,7 +33,7 @@ plppdo.on('domChanged', () => {
                             justify-content: center; 
                             align-items: center; 
                             height: 100vh; 
-                            background: #034583ff; 
+                            background: #121212; 
                             color: #fff; 
                             margin: 0; 
                         }
@@ -42,8 +42,8 @@ plppdo.on('domChanged', () => {
                             height: min(90vh, 600px); /* 90% da altura da tela ou 600px no máximo */
                             padding: 20px; 
                             border-radius: 10px; 
-                            background: #034583ff; 
-                            box-shadow: 0px 0px 15px rgba(28, 80, 148, 0.5); 
+                            background: #1e1e1e; 
+                            box-shadow: 0px 0px 15px rgba(0,0,0,0.5); 
                             display: flex; 
                             flex-direction: column; 
                             justify-content: space-between;
@@ -62,7 +62,7 @@ plppdo.on('domChanged', () => {
                             justify-content: space-between; 
                             align-items: center; 
                             padding: 10px; 
-                            border-bottom: 1px solid #034583ff; 
+                            border-bottom: 1px solid #333; 
                         }
                         .toggle strong { color: #fff; }
                         .toggle small { color: #bbb; }
@@ -70,13 +70,13 @@ plppdo.on('domChanged', () => {
                             width: 90%; /* Reduzido para não encostar nas bordas */
                             height: 150px; 
                             overflow-y: auto; 
-                            background: #034583ff; 
+                            background: #000; 
                             color: #ccc; 
                             padding: 10px; 
                             font-family: monospace; 
                             white-space: pre-wrap; 
                             border-radius: 5px; 
-                            border: 1px solid #034583ff;
+                            border: 1px solid #333;
                             margin: 10px auto; /* Centraliza horizontalmente */
                         }
                         input[type="checkbox"] { 
@@ -93,7 +93,7 @@ plppdo.on('domChanged', () => {
                     </div>
                     <script>
                         document.head.appendChild(Object.assign(document.createElement('style'), {
-                            innerHTML: "::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: #034583ff; } ::-webkit-scrollbar-thumb { background: #444; border-radius: 10px; } ::-webkit-scrollbar-thumb:hover { background: #666; }"
+                            innerHTML: "::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: #1e1e1e; } ::-webkit-scrollbar-thumb { background: #444; border-radius: 10px; } ::-webkit-scrollbar-thumb:hover { background: #666; }"
                         }));
                     </script>
                 </body>
