@@ -84,55 +84,54 @@ document.addEventListener('mousemove', e => { if (isDragging) { let newX = Math.
 
 /* Dropdown */
 Object.assign(dropdownMenu.style, {
-    position: 'absolute', top: '100%', left: '0', width: '160px', backgroundColor: 'rgba(34,139,34,0.85)',
-    borderRadius: '10px', color: 'white', fontSize: '13px', fontFamily: 'Monospace, sans-serif',
-    display: 'none', flexDirection: 'column', zIndex: '1000', padding: '5px', cursor: 'default',
-    userSelect: 'none', transition: 'transform 0.3s ease', backdropFilter: 'blur(2px)', WebkitBackdropFilter: 'blur(2px)',
-    border: '2px solid #B22222', boxShadow: '0 0 8px #B22222',
+    position: 'absolute', top: '100%', left: '0', width: '180px', backgroundColor: 'rgba(34, 34, 34, 0.92)',
+    borderRadius: '12px', color: 'white', fontSize: '14px', fontFamily: 'Monospace, sans-serif',
+    display: 'none', flexDirection: 'column', zIndex: '1000', padding: '12px', cursor: 'default',
+    userSelect: 'none', transition: 'transform 0.3s ease', backdropFilter: 'blur(3px)', WebkitBackdropFilter: 'blur(3px)',
+    border: '2px solid #B22222', boxShadow: '0 0 12px #B22222', gap: '10px',
 });
 
-// Adiciona tema natalino nos inputs do menu
 const style = document.createElement('style');
 style.innerHTML = `
-    input[type="checkbox"] {appearance: none; width: 15px; height: 15px; background-color: #B22222;
-    border: 1px solid #FFD700; border-radius: 3px; margin-right: 5px; cursor: pointer;}
+    input[type="checkbox"] {appearance: none; width: 17px; height: 17px; background-color: #B22222;
+    border: 1.5px solid #FFD700; border-radius: 4px; margin-right: 8px; cursor: pointer;}
     input[type="checkbox"]:checked {background-color: #228B22; border-color: #FFD700;}
-    input[type="text"], input[type="number"], input[type="range"] {width: calc(100% - 10px); border: 1px solid #B22222; 
-    color: #FFD700; accent-color: #228B22; background-color: #228B22; padding: 3px; border-radius: 3px; background: none;}
-    label {display: flex; align-items: center; color: #FFD700; padding-top: 3px;}
+    input[type="text"], input[type="number"], input[type="range"] {width: calc(100% - 12px); border: 1.5px solid #B22222; 
+    color: #FFD700; accent-color: #228B22; background-color: #222; padding: 5px; border-radius: 4px; background: none; margin-bottom: 8px;}
+    label {display: flex; align-items: center; color: #FFD700; padding-top: 6px; margin-bottom: 8px;}
 `;
 dropdownMenu.appendChild(style);
 
 dropdownMenu.innerHTML += `
     <style>
-        input[type="checkbox"] {appearance: none; width: 15px; height: 15px; background-color: #153F4D;
-        border: 1px solid #acacac; border-radius: 3px; margin-right: 5px; cursor: pointer;}
+        input[type="checkbox"] {appearance: none; width: 17px; height: 17px; background-color: #153F4D;
+        border: 1.5px solid #acacac; border-radius: 4px; margin-right: 8px; cursor: pointer;}
         input[type="checkbox"]:checked {background-color: #45C6D1; border-color: #45C6D1;}
-        input[type="text"], input[type="number"], input[type="range"] {width: calc(100% - 10px); border: 1px solid #153F4D; 
-        color: white; accent-color: #45C6D1; background-color: #45C6D1; padding: 3px; border-radius: 3px; background: none;}
-        label {display: flex; align-items: center; color: #153F4D; padding-top: 3px;}
+        input[type="text"], input[type="number"], input[type="range"] {width: calc(100% - 12px); border: 1.5px solid #153F4D; 
+        color: white; accent-color: #45C6D1; background-color: #45C6D1; padding: 5px; border-radius: 4px; background: none; margin-bottom: 8px;}
+        label {display: flex; align-items: center; color: #153F4D; padding-top: 6px; margin-bottom: 8px;}
     </style>
 `;
 
 watermark.appendChild(dropdownMenu);
 
 let featuresList = [
-    { name: 'questionSpoof', type: 'checkbox', variable: 'features.questionSpoof', attributes: 'checked', labeled: true, label: 'Question Spoof' },
-    { name: 'videoSpoof', type: 'checkbox', variable: 'features.videoSpoof', attributes: 'checked', labeled: true, label: 'Video Spoof' },
-    { name: 'showAnswers', type: 'checkbox', variable: 'features.showAnswers', labeled: true, label: 'Answer Revealer' },
-    { name: 'autoAnswer', type: 'checkbox', variable: 'features.autoAnswer', dependent: 'autoAnswerDelay,nextRecomendation,repeatQuestion', labeled: true, label: 'Auto Answer' },
-    { name: 'repeatQuestion', className: 'repeatQuestion', type: 'checkbox', variable: 'features.repeatQuestion', attributes: 'style="display:none;"', labeled: true, label: 'Repeat Question' },
-    { name: 'nextRecomendation', className: 'nextRecomendation', type: 'checkbox', variable: 'features.nextRecomendation', attributes: 'style="display:none;"', labeled: true, label: 'Recomendations' },
+    { name: 'questionSpoof', type: 'checkbox', variable: 'features.questionSpoof', attributes: 'checked', labeled: true, label: 'Falsificar Questão' },
+    { name: 'videoSpoof', type: 'checkbox', variable: 'features.videoSpoof', attributes: 'checked', labeled: true, label: 'Falsificar Vídeo' },
+    { name: 'showAnswers', type: 'checkbox', variable: 'features.showAnswers', labeled: true, label: 'Revelar Respostas' },
+    { name: 'autoAnswer', type: 'checkbox', variable: 'features.autoAnswer', dependent: 'autoAnswerDelay,nextRecomendation,repeatQuestion', labeled: true, label: 'Responder Automaticamente' },
+    { name: 'repeatQuestion', className: 'repeatQuestion', type: 'checkbox', variable: 'features.repeatQuestion', attributes: 'style="display:none;"', labeled: true, label: 'Repetir Questão' },
+    { name: 'nextRecomendation', className: 'nextRecomendation', type: 'checkbox', variable: 'features.nextRecomendation', attributes: 'style="display:none;"', labeled: true, label: 'Recomendações' },
     { name: 'autoAnswerDelay', className: 'autoAnswerDelay', type: 'range', variable: 'features.autoAnswerDelay', attributes: 'style="display:none;" min="1" max="3" value="1"', labeled: false },
-    { name: 'minuteFarm', type: 'checkbox', variable: 'features.minuteFarmer', labeled: true, label: 'Minute Farmer' },
-    { name: 'customBanner', type: 'checkbox', variable: 'features.customBanner', labeled: true, label: 'Custom Banner' },
-    { name: 'rgbLogo', type: 'checkbox', variable: 'features.rgbLogo', labeled: true, label: 'RGB Logo' },
-    { name: 'darkMode', type: 'checkbox', variable: 'features.darkMode', attributes: 'checked', labeled: true, label: 'Dark Mode' },
+    { name: 'minuteFarm', type: 'checkbox', variable: 'features.minuteFarmer', labeled: true, label: 'Fazenda de Minutos' },
+    { name: 'customBanner', type: 'checkbox', variable: 'features.customBanner', labeled: true, label: 'Banner Personalizado' },
+    { name: 'rgbLogo', type: 'checkbox', variable: 'features.rgbLogo', labeled: true, label: 'Logo RGB' },
+    { name: 'darkMode', type: 'checkbox', variable: 'features.darkMode', attributes: 'checked', labeled: true, label: 'Modo Escuro' },
     { name: 'onekoJs', type: 'checkbox', variable: 'features.onekoJs', labeled: true, label: 'onekoJs' },
-    { name: 'Custom Username', type: 'nonInput' },
-    { name: 'customName', type: 'text', variable: 'featureConfigs.customUsername', attributes: 'autocomplete="off"' },
-    { name: 'Custom pfp', type: 'nonInput' },
-    { name: 'customPfp', type: 'text', variable: 'featureConfigs.customPfp', attributes: 'autocomplete="off"' }
+    { name: 'Custom Username', type: 'nonInput', label: 'Usuário Personalizado' },
+    { name: 'customName', type: 'text', variable: 'featureConfigs.customUsername', attributes: 'autocomplete="off"', label: 'Nome' },
+    { name: 'Custom pfp', type: 'nonInput', label: 'Foto Personalizada' },
+    { name: 'customPfp', type: 'text', variable: 'featureConfigs.customPfp', attributes: 'autocomplete="off"', label: 'Foto' }
   ];
   
 

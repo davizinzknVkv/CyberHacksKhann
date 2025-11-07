@@ -1,4 +1,4 @@
-const ver = "V4.2.9";
+const ver = "V5.4.0";
 let isDev = false;
 
  const logoUrl = "https://github.com/davizinzknVkv/ScrotKhan1/blob/main/logo.png";
