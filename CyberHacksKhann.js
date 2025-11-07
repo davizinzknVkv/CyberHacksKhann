@@ -1,4 +1,4 @@
-const ver = "V5.4.0";
+const ver = "V4.2.9";
 let isDev = false;
 
  const logoUrl = "https://github.com/davizinzknVkv/ScrotKhan1/blob/main/logo.png";
@@ -83,15 +83,15 @@ function setupMenu() {
 }
 
 /* Funções Principais */ 
-function iniciarPrincipal(){
-    loadScript(repoPath+'functions/questionSpoof.js', 'falsificarPergunta');
-    loadScript(repoPath+'functions/videoSpoof.js', 'falsificarVideo');
-    loadScript(repoPath+'functions/minuteFarm.js', 'fazendaDeMinutos');
-    loadScript(repoPath+'functions/spoofUser.js', 'falsificarUsuario');
-    loadScript(repoPath+'functions/answerRevealer.js', 'reveladorDeRespostas');
-    loadScript(repoPath+'functions/rgbLogo.js', 'logoRgb');
-    loadScript(repoPath+'functions/customBanner.js', 'bannerPersonalizado');
-    loadScript(repoPath+'functions/autoAnswer.js', 'respostaAutomatica');
+function setupMain(){
+    loadScript(repoPath+'functions/questionSpoof.js', 'questionSpoof');
+    loadScript(repoPath+'functions/videoSpoof.js', 'videoSpoof');
+    loadScript(repoPath+'functions/minuteFarm.js', 'minuteFarm');
+    loadScript(repoPath+'functions/spoofUser.js', 'spoofUser');
+    loadScript(repoPath+'functions/answerRevealer.js', 'answerRevealer');
+    loadScript(repoPath+'functions/rgbLogo.js', 'rgbLogo');
+    loadScript(repoPath+'functions/customBanner.js', 'customBanner');
+    loadScript(repoPath+'functions/autoAnswer.js', 'autoAnswer');
 }
 
 /* Inject */
