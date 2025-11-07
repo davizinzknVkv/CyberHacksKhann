@@ -4,11 +4,11 @@ plppdo.on('domChanged', () => {
     styleElement.className = "RGBLogo"
     styleElement.textContent = `
         @keyframes colorShift {
-            0% { fill: rgb(183, 0, 255); }
-            33% { fill: rgb(0, 255, 0); }
-            66% { fill: rgb(0, 0, 255); }
-            100% { fill: rgb(8, 167, 79); }
-            100% { fill: rgba(0, 217, 255, 1); }
+            0% { fill: rgb(220, 20, 60); }      /* Vermelho Natal */
+            33% { fill: rgb(34, 139, 34); }     /* Verde Natal */
+            66% { fill: rgb(255, 255, 255); }   /* Branco Neve */
+            80% { fill: rgb(255, 215, 0); }     /* Dourado */
+            100% { fill: rgb(220, 20, 60); }    /* Vermelho Natal */
         }   
     `;
     if(features.rgbLogo&&khanLogo){

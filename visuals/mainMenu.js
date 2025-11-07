@@ -63,14 +63,15 @@ function handleInput(ids, callback = null) {
 
 /* Watermark */
 Object.assign(watermark.style, {
-    position: 'fixed', top: '0', left: '85%', width: '150px', height: '30px', backgroundColor: 'RGB(0,0,0,0.5)',
-    color: 'white', fontSize: '15px', fontFamily: 'MuseoSans, sans-serif', display: 'flex', justifyContent: 'space-between', alignItems: 'center', 
-    cursor: 'default', userSelect: 'none', padding: '0 10px',  borderRadius: '10px', zIndex: '1001', transition: 'transform 0.3s ease'
+    position: 'fixed', top: '0', left: '85%', width: '170px', height: '36px', backgroundColor: 'rgba(34,139,34,0.7)',
+    color: '#FFD700', fontSize: '16px', fontFamily: 'MuseoSans, sans-serif', display: 'flex', justifyContent: 'space-between', alignItems: 'center', 
+    cursor: 'default', userSelect: 'none', padding: '0 12px',  borderRadius: '12px', zIndex: '1001', transition: 'transform 0.3s ease',
+    border: '2px solid #B22222', boxShadow: '0 0 8px #B22222',
 });
 
 if (device.mobile) watermark.style.left = '65%'
 
-watermark.innerHTML = `<span style="text-shadow: -1px 0.5px 0 #00FFFF, -2px 0px 0 #00FFFF;">CyberHacksKhan</span> <span style="color:gray; padding-left:2px; font-family: Arial, sans-serif; font-size:10px">${ver}</span>`;
+watermark.innerHTML = `<span style="text-shadow: 0 0 6px #FFD700, 0 0 12px #B22222;">🎄 CyberHacksKhan 🎅</span> <span style="color:#FFD700; padding-left:6px; font-family: Arial, sans-serif; font-size:12px">${ver}</span>`;
 
 document.body.appendChild(watermark);
 
@@ -93,9 +94,9 @@ dropdownMenu.innerHTML = `
     <style>
         input[type="checkbox"] {appearance: none; width: 15px; height: 15px; background-color: #153F4D;
         border: 1px solid #acacac; border-radius: 3px; margin-right: 5px; cursor: pointer;}
-        input[type="checkbox"]:checked {background-color: #00FFFF; border-color: #00FFFF;}
+        input[type="checkbox"]:checked {background-color: #45C6D1; border-color: #45C6D1;}
         input[type="text"], input[type="number"], input[type="range"] {width: calc(100% - 10px); border: 1px solid #153F4D; 
-        color: white; accent-color: #00FFFF; background-color: #00FFFF; padding: 3px; border-radius: 3px; background: none;}
+        color: white; accent-color: #45C6D1; background-color: #45C6D1; padding: 3px; border-radius: 3px; background: none;}
         label {display: flex; align-items: center; color: #153F4D; padding-top: 3px;}
     </style>
 `;

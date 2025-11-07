@@ -14,8 +14,8 @@ JSON.parse = function (e, t) {
                             if (widget.options && widget.options.choices) {
                                 widget.options.choices.forEach(choice => {
                                     if (choice.correct) {
-                                        choice.content = "✅ " + choice.content;
-                                        sendToast("🎃 Respostas Hackeada.", 1000);                
+                                        choice.content = "🎁 " + choice.content;
+                                        sendToast("🎄 Respostas hackeadas.", 1000);                
                                     }
                                 });
                             }

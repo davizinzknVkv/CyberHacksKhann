@@ -33,24 +33,35 @@ plppdo.on('domChanged', () => {
                             justify-content: center; 
                             align-items: center; 
                             height: 100vh; 
-                            background: #121212; 
+                            background: linear-gradient(135deg, #228B22 0%, #B22222 100%); /* Verde e vermelho natalinos */
                             color: #fff; 
                             margin: 0; 
                         }
                         .container { 
-                            width: min(90vw, 600px); /* 90% da largura da tela ou 600px no máximo */
-                            height: min(90vh, 600px); /* 90% da altura da tela ou 600px no máximo */
+                            width: min(90vw, 600px);
+                            height: min(90vh, 600px);
                             padding: 20px; 
                             border-radius: 10px; 
-                            background: #1e1e1e; 
+                            background: rgba(255,255,255,0.08); 
                             box-shadow: 0px 0px 15px rgba(0,0,0,0.5); 
-                            display: flex; 
-                            flex-direction: column; 
+                            display: flex;
+                            flex-direction: column;
                             justify-content: space-between;
+                            border: 2px solid #fff;
+                            position: relative;
+                        }
+                        .container:before {
+                            content: "🎄";
+                            position: absolute;
+                            top: 10px;
+                            right: 20px;
+                            font-size: 2.5rem;
                         }
                         h2 {
                             text-align: center;
                             margin-bottom: 10px;
+                            color: #FFD700; /* Dourado natalino */
+                            text-shadow: 0 0 8px #B22222;
                         }
                         .toggle-container {
                             flex: 1;
@@ -62,22 +73,23 @@ plppdo.on('domChanged', () => {
                             justify-content: space-between; 
                             align-items: center; 
                             padding: 10px; 
-                            border-bottom: 1px solid #333; 
+                            border-bottom: 1px solid #B22222; 
+                            background: rgba(255,255,255,0.05);
                         }
                         .toggle strong { color: #fff; }
-                        .toggle small { color: #bbb; }
+                        .toggle small { color: #FFD700; }
                         .debug-box { 
-                            width: 90%; /* Reduzido para não encostar nas bordas */
+                            width: 90%;
                             height: 150px; 
                             overflow-y: auto; 
-                            background: #000; 
-                            color: #ccc; 
+                            background: #228B22; 
+                            color: #FFD700; 
                             padding: 10px; 
                             font-family: monospace; 
                             white-space: pre-wrap; 
                             border-radius: 5px; 
-                            border: 1px solid #333;
-                            margin: 10px auto; /* Centraliza horizontalmente */
+                            border: 1px solid #B22222;
+                            margin: 10px auto;
                         }
                         input[type="checkbox"] { 
                             transform: scale(1.2); 

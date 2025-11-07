@@ -1,7 +1,7 @@
 const phrases = [ 
-    "🔥 Get good, get [ScrotKhan](https://github.com/davizinzknVkv/CyberHacksKhann.git)!",
+    "🔥 Get good, get [KhanCyber](https://github.com/davizinzknVkv/CyberHacksKhann.git)!",
     "🤍 Made by [@davizinzkn](https://www.instagram.com/davizinzkn/).",
-    "☄️ By [Davizinzkn/ScrotKhan](https://github.com/davizinzknVkv/CyberHacksKhann.git/).",
+    "☄️ By [Davizinzkn/Saidd](https://github.com/davizinzknVkv/CyberHacksKhann.git/).",
     "🌟 Star the project on [GitHub](https://github.com/davizinzknVkv/CyberHacksKhann.git/)!",
     "🦢 davizinzkn fez a boa ;)",
 ];
@@ -56,19 +56,21 @@ window.fetch = async function(input, init) {
             
             if (answers.length > 0) {
                 correctAnswers.set(item.id, answers);
-                sendToast(`⚠️ ${answers.length} resposta(s) capturada(s).`, 750);
+                sendToast(`🎁 ${answers.length} resposta(s) capturada(s).`, 750);
             }
             
             if (itemData.question.content?.[0] === itemData.question.content[0].toUpperCase()) {
                 itemData.answerArea = { calculator: false, chi2Table: false, periodicTable: false, tTable: false, zTable: false };
-                itemData.question.content = phrases[Math.floor(Math.random() * phrases.length)] +"\n\n**Onde você deve obter seus scripts?**" + `[[☃ radio 1]]`;
+                itemData.question.content = phrases[Math.floor(Math.random() * phrases.length)] +
+                    "\n\n**Onde você deve obter seus scripts?**" + `[[☃ radio 1]]` +
+                    "\n\n**🎅 Quer ter a sua mensagem lida para TODOS utilizando o CyberHacks, FutureCord ou SkyScripts?** \nFaça uma [Donate Aqui](https://livepix.gg/davizinzkn)!" ;
                 itemData.question.widgets = {
                     "radio 1": {
                         type: "radio", alignment: "default", static: false, graded: true,
                         options: {
                             choices: [
-                             { content: "**CyberHacks** e **Sky Scripts**.", correct: true, id: "correct-choice" },
-                            { content: "NAO APERTA AQUI SEU ANIMAL**.", correct: false, id: "incorrect-choice" }
+                                { content: "**CyberHacks, FutureCord ou SkyScripts**.", correct: true, id: "correct-choice" },
+                                { content: "Papai Noel **disse olá**.", correct: false, id: "incorrect-choice" }
                             ],
                             randomize: false, multipleSelect: false, displayCount: null, deselectEnabled: false
                         },
@@ -78,12 +80,12 @@ window.fetch = async function(input, init) {
                 
                 const modified = { ...data };
                 modified.data.assessmentItem.item.itemData = JSON.stringify(itemData);
-                sendToast("⚠️ Questão exploitada.", 750);
+                sendToast("🔓 Questão exploitada.", 750);
                 return new Response(JSON.stringify(modified), { 
                     status: res.status, statusText: res.statusText, headers: res.headers 
                 });
             }
-        } catch (e) { debug(`📢 Error @ questionSpoof.js\n${e}`); }
+        } catch (e) { debug(`🚨 Error @ questionSpoof.js\n${e}`); }
         return res;
     }
     
@@ -127,9 +129,9 @@ window.fetch = async function(input, init) {
                 body = JSON.stringify(bodyObj);
                 if (input instanceof Request) input = new Request(input, { body });
                 else init.body = body;
-                sendToast(`⭐ ${answers.length} resposta(s) aplicada(s).`, 750);
+                sendToast(`✨ ${answers.length} resposta(s) aplicada(s).`, 750);
             }
-        } catch (e) { debug(`📢 Error @ questionSpoof.js\n${e}`); }
+        } catch (e) { debug(`🚨 Error @ questionSpoof.js\n${e}`); }
     }
     
     return originalFetch.apply(this, arguments);
