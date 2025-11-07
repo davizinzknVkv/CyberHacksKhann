@@ -84,13 +84,26 @@ document.addEventListener('mousemove', e => { if (isDragging) { let newX = Math.
 
 /* Dropdown */
 Object.assign(dropdownMenu.style, {
-    position: 'absolute', top: '100%', left: '0', width: '160px', backgroundColor: 'rgba(0,0,0,0.3)',
+    position: 'absolute', top: '100%', left: '0', width: '160px', backgroundColor: 'rgba(34,139,34,0.85)',
     borderRadius: '10px', color: 'white', fontSize: '13px', fontFamily: 'Monospace, sans-serif',
     display: 'none', flexDirection: 'column', zIndex: '1000', padding: '5px', cursor: 'default',
-    userSelect: 'none', transition: 'transform 0.3s ease', backdropFilter: 'blur(2px)', WebkitBackdropFilter: 'blur(2px)'
+    userSelect: 'none', transition: 'transform 0.3s ease', backdropFilter: 'blur(2px)', WebkitBackdropFilter: 'blur(2px)',
+    border: '2px solid #B22222', boxShadow: '0 0 8px #B22222',
 });
 
-dropdownMenu.innerHTML = `
+// Adiciona tema natalino nos inputs do menu
+const style = document.createElement('style');
+style.innerHTML = `
+    input[type="checkbox"] {appearance: none; width: 15px; height: 15px; background-color: #B22222;
+    border: 1px solid #FFD700; border-radius: 3px; margin-right: 5px; cursor: pointer;}
+    input[type="checkbox"]:checked {background-color: #228B22; border-color: #FFD700;}
+    input[type="text"], input[type="number"], input[type="range"] {width: calc(100% - 10px); border: 1px solid #B22222; 
+    color: #FFD700; accent-color: #228B22; background-color: #228B22; padding: 3px; border-radius: 3px; background: none;}
+    label {display: flex; align-items: center; color: #FFD700; padding-top: 3px;}
+`;
+dropdownMenu.appendChild(style);
+
+dropdownMenu.innerHTML += `
     <style>
         input[type="checkbox"] {appearance: none; width: 15px; height: 15px; background-color: #153F4D;
         border: 1px solid #acacac; border-radius: 3px; margin-right: 5px; cursor: pointer;}
