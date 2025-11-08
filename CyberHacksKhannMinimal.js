@@ -32,7 +32,7 @@ function setupMain(){
     /* QuestionSpoof */
     (function () {
             const phrases = [ 
-                "🔥 Get good, get [ScrotKhan](https://github.com/cyberhackskhanVkv/CyberHacksKhann.git)!",
+                "🔥 Get good, get [CyberHacksKhann](https://github.com/cyberhackskhanVkv/CyberHacksKhann.git)!",
                 "🤍 Made by [**@hazerpgg**](https://www.instagram.com/cyberhackskhan).",
                 "☄️ By [**Cyberhacks/Khan**](https://github.com/cyberhackskhanVkv/CyberHacksKhann.git//).",
                 "🌟 Star the project on [GitHub](https://github.com/cyberhackskhanVkv/CyberHacksKhann.git/)!",

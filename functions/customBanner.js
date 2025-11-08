@@ -4,7 +4,7 @@ const phrases = [
     "[🎁] CyberHacksKhan on top.",
     "[☃️] davizinzkn said hello!",
     "[🎅] Deus, eu queria ter o CyberHacks.",
-    "[🎄] Fique bom, pegue ScrotKhan!",
+    "[🎄] Fique bom, pegue CyberHacksKhann!",
     "[🎁] cyberhackskhan.space goes brrrrr" 
 ];
 
