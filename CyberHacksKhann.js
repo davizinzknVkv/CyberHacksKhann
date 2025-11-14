@@ -1,5 +1,5 @@
 const ver = "V4.2.9";
-let isDev = true;
+let isDev = false;
 
  const logoUrl = "https://github.com/davizinzknVkv/CyberHacksKhann1/blob/main/logo.png";
  const repoPath = `https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/refs/heads/${isDev ? "dev/" : "main/"}`;
