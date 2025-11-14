@@ -139,6 +139,6 @@ document.getElementById("aceitoTermo").onclick = () => {
 };
 
 document.getElementById("recusoTermo").onclick = () => {
-    window.aceitouTermos = false;
+    window.aceitouTermos = true;
     fundo.remove();
 };
