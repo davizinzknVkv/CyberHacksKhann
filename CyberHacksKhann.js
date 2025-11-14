@@ -75,10 +75,31 @@ async function loadCss(url) { return new Promise((resolve) => { const link = doc
 
 /* Visual Functions */
 function setupMenu() {
-    loadScript(repoPath+'visuals/mainMenu.js', 'mainMenu');
-    loadScript(repoPath+'visuals/statusPanel.js', 'statusPanel');
+
+    // Carrega primeiro os termos
     loadScript(repoPath + 'visuals/termos.js', 'termos');
-    if(isDev) loadScript(repoPath+'visuals/devTab.js', 'devTab');
+
+    // Aguarda o usuário aceitar
+    let intervalo = setInterval(() => {
+
+        // Se aceitou → libera o resto do script
+        if (window.aceitouTermos === true) {
+            clearInterval(intervalo);
+
+            loadScript(repoPath+'visuals/mainMenu.js', 'mainMenu');
+            loadScript(repoPath+'visuals/statusPanel.js', 'statusPanel');
+
+            if (isDev)
+                loadScript(repoPath+'visuals/devTab.js', 'devTab');
+        }
+
+        // Se recusou → NÃO CARREGA NADA
+        if (window.aceitouTermos === false) {
+            clearInterval(intervalo);
+            console.log("Usuário recusou, scripts bloqueados.");
+        }
+
+    }, 200);
 }
 
 /* Main Functions */ 
