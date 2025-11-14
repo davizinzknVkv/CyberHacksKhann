@@ -12,7 +12,7 @@
 
 - Bom uso e bom Estudos Não deixe de entra no discord
  ###  Abraços Do Davizinzkn s2 
-- link do servidor [Discord Cyber](https://discord.gg/2cK8gymMwZ)
+-  [Discord Cyber](https://discord.gg/2cK8gymMwZ)
 
 
 ### The most advanced Khan Academy cheat.
