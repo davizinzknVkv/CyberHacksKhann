@@ -4,7 +4,7 @@
 - Watermark, status panel, banners, menus e toasts com cores e emojis natalinos (🎅, 🎄, 🎁, ☃️, etc).
 - Experiência visual especial para o fim de ano!
 - Todas as funções continuam funcionando normalmente.
-
+###  Termos de  uso
 - Update  Termos de uso do script 
 - agora ao usar o script vc concorda com sera feito
 - Si vc discorda vc podera usar ainda porem com um risco maior 
