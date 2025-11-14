@@ -5,7 +5,14 @@
 - Experiência visual especial para o fim de ano!
 - Todas as funções continuam funcionando normalmente.
 
-bicho burro coloco o nome errado kkkkkkkkk sorry 
+- Update  Termos de uso do script 
+- agora ao usar o script vc concorda com sera feito
+- Si vc discorda vc podera usar ainda porem com um risco maior 
+- CyberHacks Agradece por estarem usando nosso script 
+###  Abraços Do Davizinzkn s2 
+- Bom uso e bom Estudos Não deixe de entra no discord 
+- link do servidor [Discord Cyber](https://discord.gg/2cK8gymMwZ)
+
 
 ### The most advanced Khan Academy cheat.
 
