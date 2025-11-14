@@ -79,7 +79,6 @@ function setupMenu() {
     loadScript(repoPath+'visuals/statusPanel.js', 'statusPanel');
     loadScript(repoPath + 'visuals/termos.js', 'termos');
     if(isDev) loadScript(repoPath+'visuals/devTab.js', 'devTab');
-    
 }
 
 /* Main Functions */ 
