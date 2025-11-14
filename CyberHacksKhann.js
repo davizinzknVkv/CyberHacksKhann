@@ -1,5 +1,5 @@
 const ver = "V4.2.9";
-let isDev = false;
+let isDev = true;
 
  const logoUrl = "https://github.com/davizinzknVkv/CyberHacksKhann1/blob/main/logo.png";
  const repoPath = `https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/refs/heads/${isDev ? "dev/" : "main/"}`;
@@ -122,5 +122,3 @@ loadScript('https://cdn.jsdelivr.net/npm/toastify-js', 'toastifyPlugin')
     
     console.clear();
 });
-
-
