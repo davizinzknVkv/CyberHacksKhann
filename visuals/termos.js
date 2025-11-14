@@ -1,7 +1,7 @@
 // Variável global que o main vai esperar
 window.aceitouTermos = null;
 
-// Criar fundo escuro com fade
+// Cria o fundo preto de tela inteira
 const fundo = document.createElement("div");
 fundo.style = `
     position: fixed;
@@ -9,130 +9,136 @@ fundo.style = `
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.88);
+    background: black;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999999999;
-    animation: fadeIn 0.4s ease;
+    z-index: 999999;
+    overflow-y: auto;
+    padding: 40px;
+    font-family: Arial, sans-serif;
 `;
 document.body.appendChild(fundo);
 
-// Animação do fade
-const styleFade = document.createElement("style");
-styleFade.innerHTML = `
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-`;
-document.head.appendChild(styleFade);
-
-// Caixa moderna
+// Caixa do texto (tela inteira mesmo, sem popup)
 const box = document.createElement("div");
 box.style = `
-    width: 60%;
+    width: 100%;
     max-width: 900px;
-    height: 70%;
-    background: #0d0d0d;
-    padding: 25px;
-    border-radius: 14px;
-    overflow-y: auto;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    border: 2px solid #1aff77;
-    box-shadow: 0 0 15px #1aff77aa, 0 0 35px #1aff7733 inset;
-    animation: popup 0.35s ease;
+    margin: 0 auto 100px auto;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
 `;
 fundo.appendChild(box);
 
-// Animação da caixa
-const stylePopup = document.createElement("style");
-stylePopup.innerHTML = `
-@keyframes popup {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-`;
-document.head.appendChild(stylePopup);
-
-// Conteúdo
+// Texto COMPLETO do termo
 box.innerHTML = `
-    <h2 style="
-        text-align:center;
-        margin-bottom: 20px;
-        font-size: 26px;
-        color: #1aff77;
-        text-shadow: 0 0 6px #1aff77;
-    ">
-        Termos de Uso — CyberHacksKhan
-    </h2>
+<h1 style="text-align:center; margin-bottom:30px; font-size:28px; color:#00ff80;">
+Termo de Mandato, Autorização de Acesso e Declaração de Ciência e Risco
+</h1>
 
-    <p style="font-size:16px; line-height:23px; margin-bottom:20px;">
-        Ao utilizar este script, você declara estar ciente de que se trata de um recurso não oficial,
-        desenvolvido apenas para fins educacionais e demonstrativos. O uso desta ferramenta pode
-        violar os Termos de Serviço da Khan Academy, resultando em penalidades.
-        <br><br>
-        O desenvolvedor não se responsabiliza por:
-        <br>
-        • Suspensões ou banimentos<br>
-        • Perdas de conta ou progresso<br>
-        • Travamentos, erros ou danos<br>
-        • Qualquer consequência do uso indevido
-        <br><br>
-        Ao clicar em <b style="color:#1aff77;">ACEITO</b>, você confirma que:
-        <br>
-        • Está usando o script por conta própria<br>
-        • Aceita totalmente os termos acima<br>
-        • Assume total responsabilidade pelo uso
-        <br><br>
-        Caso clique em <b style="color:#ff4444;">RECUSO</b>, o script será abortado imediatamente.
-    </p>
+<p>
+Este documento é a base para sua autorização formal, cujo aceite será coletado externamente.
+<br><br>
 
-    <div style="text-align:center; margin-top:25px;">
-        <button id="btnAceito" style="
-            padding: 12px 28px;
-            background: #1aff77;
-            color: #000;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-            margin-right: 20px;
-            font-size: 17px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px #1aff77aa;
-            transition: 0.2s;
-        ">ACEITO</button>
+<b>AS PARTES</b><br>
+<b>OUTORGANTE:</b> O Usuário, pessoa física que realiza o ato de aceite destes termos e que fornecerá as credenciais de acesso, doravante denominado(a) simplesmente OUTORGANTE.<br><br>
 
-        <button id="btnRecuso" style="
-            padding: 12px 28px;
-            background: #ff3333;
-            color: #fff;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-            font-size: 17px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px #ff3333aa;
-            transition: 0.2s;
-        ">RECUSO</button>
-    </div>
+<b>OUTORGADA:</b> CYBERHACKSKHAN (“CYBERHACKSKHAN”, “Empresa” ou “Plataforma”), doravante denominada simplesmente OUTORGADA.
+<br><br>
+
+Pelo presente Instrumento Particular, o(a) OUTORGANTE nomeia e constitui, de forma irrevogável e irretratável durante a vigência deste mandato, sua bastante procuradora a OUTORGADA, conferindo-lhe os poderes específicos para atuar em seu nome.
+<br><br>
+
+<h2>CLÁUSULA PRIMEIRA - DO OBJETO E ESCOPO DA AUTORIZAÇÃO</h2>
+
+1.1 O objeto deste mandato consiste na concessão de autorização expressa para que a OUTORGADA, utilizando-se das credenciais fornecidas, acesse e opere plataformas de terceiros em seu nome.<br><br>
+
+1.2 A autorização inclui, entre outras plataformas:<br>
+• SED<br>
+• Sala do Futuro<br>
+• Matific<br>
+• Khan Academy<br>
+• Árvore (LeiaSP)<br>
+• Speak<br>
+• Expansão Noturno (Moodle)<br>
+• Alura<br>
+• E demais plataformas relacionadas.
+<br><br>
+
+<h2>CLÁUSULA SEGUNDA - DOS PODERES CONCEDIDOS</h2>
+O OUTORGANTE concede poderes amplos para login, acesso, execução de tarefas, consulta de dados, análise e todos os atos necessários ao serviço.
+<br><br>
+
+<h2>CLÁUSULA TERCEIRA - DECLARAÇÕES, GARANTIAS E RISCOS</h2>
+O OUTORGANTE declara que:<br>
+• As credenciais são legítimas ou autorizadas<br>
+• É capaz civilmente ou possui autorização dos responsáveis<br>
+• Assume totalmente os riscos acadêmicos<br>
+• Reconhece que o uso pode violar políticas escolares<br>
+• A OUTORGADA não tem vínculo com órgãos oficiais
+<br><br>
+
+<h2>CLÁUSULA QUARTA - PRIVACIDADE (LGPD)</h2>
+A OUTORGADA trata dados apenas para a execução do serviço, adota medidas de segurança e não usa informações para outras finalidades.
+<br><br>
+
+<h2>CLÁUSULA QUINTA - PROPRIEDADE INTELECTUAL</h2>
+Nada neste termo concede propriedade intelectual ao OUTORGANTE.
+<br><br>
+
+<h2>CLÁUSULA SEXTA – ISENÇÃO DE RESPONSABILIDADE</h2>
+A OUTORGADA não garante funcionamento contínuo, nem resultados acadêmicos e não responde por falhas externas.
+<br><br>
+
+<h2>CLÁUSULA SÉTIMA - INDENIZAÇÃO</h2>
+O OUTORGANTE indenizará a OUTORGADA por qualquer uso indevido, violação ou falsidade de informações.
+<br><br>
+
+<h2>CLÁUSULA OITAVA - VIGÊNCIA</h2>
+O mandato é válido a partir do aceite e pode ser revogado pelo OUTORGANTE a qualquer momento.
+<br><br>
+
+<h2>CLÁUSULA NONA - ACEITE EXTERNO</h2>
+O aceite será realizado via Discord (ou canal designado) e possui validade jurídica, podendo incluir hash SHA-256, data, hora e ID.
+<br><br>
+
+<h2>CLÁUSULA DÉCIMA - DISPOSIÇÕES GERAIS</h2>
+O termo constitui o acordo total entre as partes.
+<br><br>
+
+© 2025 CYBERHACKSKHAN. Todos os direitos reservados.
+</p>
+
+<br><br><br>
 `;
 
-// Efeitos hover
-document.querySelector("#btnAceito").onmouseover = e => e.target.style.transform = "scale(1.05)";
-document.querySelector("#btnAceito").onmouseout  = e => e.target.style.transform = "scale(1)";
+// Botões fixos no rodapé
+const botoes = document.createElement("div");
+botoes.style = `
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #000000dd;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    z-index: 1000000;
+`;
+botoes.innerHTML = `
+    <button id="aceitoTermo" style="padding:12px 30px; background:green; color:white; border:none; font-size:18px; border-radius:8px; cursor:pointer;">ACEITO</button>
+    <button id="recusoTermo" style="padding:12px 30px; background:red; color:white; border:none; font-size:18px; border-radius:8px; cursor:pointer;">RECUSO</button>
+`;
+fundo.appendChild(botoes);
 
-document.querySelector("#btnRecuso").onmouseover = e => e.target.style.transform = "scale(1.05)";
-document.querySelector("#btnRecuso").onmouseout  = e => e.target.style.transform = "scale(1)";
-
-// Eventos dos botões
-document.getElementById("btnAceito").onclick = () => {
+// Eventos
+document.getElementById("aceitoTermo").onclick = () => {
     window.aceitouTermos = true;
     fundo.remove();
 };
 
-document.getElementById("btnRecuso").onclick = () => {
+document.getElementById("recusoTermo").onclick = () => {
     window.aceitouTermos = false;
     fundo.remove();
 };
