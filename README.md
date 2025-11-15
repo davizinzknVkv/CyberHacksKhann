@@ -7,7 +7,7 @@
 ###  Termos de  uso 
 
 - Update  Termos de uso do script 
-- agora ao usar o script vc concorda com sera feito
+- agora ao usar o script vc concorda com oque sera feito
 - Si vc discorda vc podera usar ainda porem com um risco maior 
 - CyberHacks Agradece por estarem usando nosso script 
 
