@@ -83,7 +83,53 @@ javascript:fetch("https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhan
 javascript:fetch("https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/refs/heads/main/CyberHacksKhannMinimal.js").then(t=>t.text()).then(eval);
 ```
 
-Recreated by cyberhacks & davizinzknn
+
+## 📌 Funções do CyberHacksKhan V5.3.9
+**🟦 Falsificar Questão**
+
+- Permite alterar visualmente o estado das questões na plataforma, exibindo como correto sem realmente responder.
+
+**🟩 Falsificar Vídeo**
+
+- Faz os vídeos parecerem completos ou assistidos, mesmo sem ter assistido de fato.
+
+**🟦 Revelar Respostas**
+
+- Mostra as respostas corretas das atividades, facilitando na hora de conferir ou responder.
+
+**🟩 Responder Automaticamente**
+
+- Preenche e envia as respostas automaticamente, agilizando o processo das atividades.
+
+**🟦 Fazenda de Minutos**
+
+- Gera minutos automaticamente para acumular tempo de estudo na plataforma.
+
+**🟩 Banner Personalizado**
+
+- Permite colocar um banner visual próprio dentro da interface.
+
+**🟦 Logo RGB**
+
+- Aplica um efeito RGB no logo, deixando o visual mais chamativo.
+
+**🟩 Modo Escuro**
+
+- Ativa o tema dark para uma experiência mais confortável aos olhos.
+
+**🟦 onek0Js**
+
+- Função extra que adiciona animações/efeitos personalizados no layout.
+
+**🟩 Custom Username**
+
+- Permite substituir o nome exibido por um username personalizado.
+
+**🟦 Custom PFP**
+
+- Permite definir uma imagem de perfil personalizada.
+
+- Recreated by cyberhacks & davizinzknn
 
 Thank you all for your support over the last few months.
 
