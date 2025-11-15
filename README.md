@@ -11,7 +11,7 @@
 - Si vc discorda vc podera usar ainda porem com um risco maior 
 - CyberHacks Agradece por estarem usando nosso script 
 
-*📄 Sobre o Termo ( CyberHacksKhan) *
+*📄 Sobre o Termo ( CyberHacksKhan)*
 
 - O CYBERHACKSKHAN não utiliza, solicita ou armazena login, senha, RA, matrícula ou qualquer tipo de credencial escolar.
 
