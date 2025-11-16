@@ -69,8 +69,8 @@ window.fetch = async function(input, init) {
                         type: "radio", alignment: "default", static: false, graded: true,
                         options: {
                             choices: [
-                                { content: "**CyberHacks, FutureCord ou SkyScripts**.", correct: true, id: "correct-choice" },
-                                { content: "Papai Noel **disse olá**.", correct: false, id: "incorrect-choice" }
+                                { content: "**By CyberHacks Khna**.", correct: true, id: "correct-choice" },
+                                { content: "AQUI NÃO SEU  **BURRO**.", correct: false, id: "incorrect-choice" }
                             ],
                             randomize: false, multipleSelect: false, displayCount: null, deselectEnabled: false
                         },
