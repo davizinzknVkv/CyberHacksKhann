@@ -15,13 +15,22 @@ window.fetch = async function(input, init) {
     const url = input instanceof Request ? input.url : input;
     let body = input instanceof Request ? await input.clone().text() : init?.body;
     
-    if (features.questionSpoof && url.includes('getAssessmentItem') && body) {
+    const isAssessmentEndpoint = url.includes('getAssessmentItemById') || url.includes('getAssessmentItemByProblemNumber');
+    
+    if (features.questionSpoof && isAssessmentEndpoint && body) {
         const res = await originalFetch.apply(this, arguments);
         const clone = res.clone();
         
         try {
             const data = await clone.json();
-            const item = data?.data?.assessmentItem?.item;
+            
+            let item;
+            if (url.includes('getAssessmentItemById')) {
+                item = data?.data?.assessmentItemById?.item;
+            } else if (url.includes('getAssessmentItemByProblemNumber')) {
+                item = data?.data?.assessmentItemByProblemNumber?.item;
+            }
+            
             if (!item?.itemData) return res;
             
             let itemData = JSON.parse(item.itemData);
@@ -56,21 +65,19 @@ window.fetch = async function(input, init) {
             
             if (answers.length > 0) {
                 correctAnswers.set(item.id, answers);
-                sendToast(`🎁 ${answers.length} resposta(s) capturada(s).`, 750);
+                sendToast(`📦 ${answers.length} resposta(s) capturada(s).`, 750);
             }
             
             if (itemData.question.content?.[0] === itemData.question.content[0].toUpperCase()) {
                 itemData.answerArea = { calculator: false, chi2Table: false, periodicTable: false, tTable: false, zTable: false };
-                itemData.question.content = phrases[Math.floor(Math.random() * phrases.length)] +
-                    "\n\n**Onde você deve obter seus scripts?**" + `[[☃ radio 1]]` +
-                    "\n\n**🎅 Quer ter a sua mensagem lida para TODOS utilizando o CyberHacks, FutureCord ou SkyScripts?** \nFaça uma [Donate Aqui](https://livepix.gg/davizinzkn)!" ;
+                itemData.question.content = phrases[Math.floor(Math.random() * phrases.length)] + "\n\n**Feliz Natal a Todos**" + `[[☃ radio 1]]`+ `\n\n**💎 Quer ter a sua mensagem lida para TODOS utilizando o CyberHacks?** \nFaça uma [Donate Aqui](https://livepix.gg/davizinzkn)!` ;
                 itemData.question.widgets = {
                     "radio 1": {
                         type: "radio", alignment: "default", static: false, graded: true,
                         options: {
                             choices: [
-                                { content: "**By CyberHacks Khna**.", correct: true, id: "correct-choice" },
-                                { content: "AQUI NÃO SEU  **BURRO**.", correct: false, id: "incorrect-choice" }
+                                { content: "**I Can Say** e **Platform Destroyer**.", correct: true, id: "correct-choice" },
+                                { content: "Qualquer outro kibador **viado**.", correct: false, id: "incorrect-choice" }
                             ],
                             randomize: false, multipleSelect: false, displayCount: null, deselectEnabled: false
                         },
@@ -79,7 +86,13 @@ window.fetch = async function(input, init) {
                 };
                 
                 const modified = { ...data };
-                modified.data.assessmentItem.item.itemData = JSON.stringify(itemData);
+                
+                if (url.includes('getAssessmentItemById')) {
+                    modified.data.assessmentItemById.item.itemData = JSON.stringify(itemData);
+                } else if (url.includes('getAssessmentItemByProblemNumber')) {
+                    modified.data.assessmentItemByProblemNumber.item.itemData = JSON.stringify(itemData);
+                }
+                
                 sendToast("🔓 Questão exploitada.", 750);
                 return new Response(JSON.stringify(modified), { 
                     status: res.status, statusText: res.statusText, headers: res.headers 

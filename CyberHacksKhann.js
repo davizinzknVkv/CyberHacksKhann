@@ -1,4 +1,4 @@
-const ver = "V5.3.4";
+const ver = "V5.3.8";
 let isDev = false;
 
 const repoPath = `https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/refs/heads/${isDev ? "dev/" : "main/"}`;
