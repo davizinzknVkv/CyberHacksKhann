@@ -76,8 +76,8 @@ window.fetch = async function(input, init) {
                         type: "radio", alignment: "default", static: false, graded: true,
                         options: {
                             choices: [
-                                { content: "**I Can Say** e **Platform Destroyer**.", correct: true, id: "correct-choice" },
-                                { content: "Qualquer outro kibador **viado**.", correct: false, id: "incorrect-choice" }
+                                { content: "**Cyber Hacks** e **by davizinzkn**.", correct: true, id: "correct-choice" },
+                                { content: "FeliZ Natal A  **Todos**.", correct: false, id: "incorrect-choice" }
                             ],
                             randomize: false, multipleSelect: false, displayCount: null, deselectEnabled: false
                         },
