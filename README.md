@@ -1,135 +1,94 @@
-# 🎄 CyberHacksKhan NATAL UPDATE
-### Agora com tema natalino em todos os menus, banners, status, respostas e efeitos visuais!
+# CyberHacksKhan — V5.3.9
 
-- Watermark, status panel, banners, menus e toasts com cores e emojis natalinos (🎅, 🎄, 🎁, ☃️, etc).
-- Experiência visual especial para o fim de ano!
-- Todas as funções continuam funcionando normalmente.
-###  Termos de  uso 
+**The most advanced Khan Academy script.**
 
-- Update  Termos de uso do script 
-- agora ao usar o script vc concorda com oque sera feito
-- Si vc discorda vc podera usar ainda porem com um risco maior 
-- CyberHacks Agradece por estarem usando nosso script 
+Script reformulado com **design padrão restaurado**, melhorias internas e nova função adicionada, mantendo foco em estabilidade e desempenho.
 
- **📄 Sobre o Termo ( CyberHacksKhan)**
+---
 
-- O CYBERHACKSKHAN não utiliza, solicita ou armazena login, senha, RA, matrícula ou qualquer tipo de credencial escolar.
+## 🔄 Atualização Recente
 
-- O Termo serve apenas para declarar que o usuário:
+- Tema natalino removido
+- Design original restaurado
+- Ajustes visuais e estruturais
+- Nova função adicionada
+- Todas as funções continuam funcionando normalmente
 
-- 🔹 Autoriza o funcionamento do script em sua própria conta
+---
 
-- O usuário está apenas permitindo que o script execute ações dentro do navegador, usando a sessão que já está aberta e autenticada pelo próprio usuário.
+## 📄 Termos de Uso — CyberHacksKhan
 
-- 🔹 Não há fornecimento de dados sensíveis
+Ao utilizar este script, o usuário declara estar ciente e de acordo com os termos abaixo.
 
-- Nada é enviado para servidores externos
+### 🔐 Privacidade e Segurança
 
-- Nada é coletado
+- O CyberHacksKhan **não solicita, não coleta e não armazena**:
+  - Login ou senha
+  - RA, matrícula ou credenciais escolares
+  - Dados pessoais
 
-- Nada é armazenado
+- Todo o funcionamento ocorre **localmente**, via JavaScript, diretamente no navegador.
 
-- Todo o funcionamento ocorre localmente, via JavaScript no navegador
+### ✅ Autorização de Uso
 
-- 🔹 Escopo real da autorização
+O usuário autoriza que o script:
 
-- O usuário permite que o CyberHacksKhan:
-
+- Utilize a sessão já autenticada
 - Interaja com elementos da página
+- Automatize ações visuais e mecânicas
+- Execute funções internas da Khan Academy
 
-- Automatize respostas
+### ⚠️ Responsabilidade e Riscos
 
-- Acelere processos internos da plataforma Khan Academy
+O usuário reconhece que:
 
-- Execute tarefas visuais e mecânicas dentro do navegador já autenticado
+- Automações podem violar regras da plataforma
+- O uso é de inteira responsabilidade do usuário
+- O CyberHacksKhan não possui vínculo oficial com a Khan Academy
 
-- 🔹 Riscos reconhecidos
+### 📜 LGPD
 
-- O usuário declara que entende que:
-
-- Automação pode violar regras de algumas plataformas educacionais
-
-- Ele é totalmente responsável por como usa o script
-
-- O CYBERHACKSKHAN é apenas uma ferramenta local, sem vínculo oficial com a Khan Academy
-
-- 🔹 Privacidade (LGPD)
-
-- Como não há coleta de credenciais:
-
-- O tratamento de dados sensíveis é nulo
-
+- Não há tratamento de dados sensíveis
 - Nenhuma informação pessoal sai do navegador
+- Nenhum dado é armazenado ou transmitido
 
-- Não existe envio, armazenamento ou manipulação de dados externos
+---
 
-- Bom uso e bom Estudos Não deixe de entra no discord
- ###  Abraços Do Davizinzkn s2 
--  [Discord Cyber](https://discord.gg/2cK8gymMwZ)
+## 🚀 Instalação
 
-
-### The most advanced Khan Academy cheat.
-
-🙂 Stable:
+### Stable
 ```js
 javascript:fetch("https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/refs/heads/main/CyberHacksKhann.js").then(t=>t.text()).then(eval);
-```
+
 🔧 Dev (beta):
+## Dev (Beta)
+Versão de desenvolvimento destinada a testes e validações de novas funções.
+🔧 Dev (beta):
+JavaScript:
 ```js
 javascript:fetch("https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/refs/heads/main/CyberHacksKhann.js").then(t=>t.text()).then(eval);
-```
-🪶 Minimal (beta):
+
+## Minimal (Beta)
+
+Versão simplificada e mais leve, focada em desempenho.
+
+JavaScript:
 ```js
 javascript:fetch("https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/refs/heads/main/CyberHacksKhannMinimal.js").then(t=>t.text()).then(eval);
-```
 
+## 📝 Observações
 
-## 📌 Funções do CyberHacksKhan V5.3.9
-**🟦 Falsificar Questão**
+Script 100% local.  
+Nenhuma coleta ou envio de dados.  
+Design padrão preservado.  
+Foco total em estabilidade e desempenho.
 
-- Permite alterar visualmente o estado das questões na plataforma, exibindo como correto sem realmente responder.
+---
 
-**🟩 Falsificar Vídeo**
+## 🌐 Comunidade
 
-- Faz os vídeos parecerem completos ou assistidos, mesmo sem ter assistido de fato.
+Discord: https://discord.gg/2cK8gymMwZ
 
-**🟦 Revelar Respostas**
+---
 
-- Mostra as respostas corretas das atividades, facilitando na hora de conferir ou responder.
-
-**🟩 Responder Automaticamente**
-
-- Preenche e envia as respostas automaticamente, agilizando o processo das atividades.
-
-**🟦 Fazenda de Minutos**
-
-- Gera minutos automaticamente para acumular tempo de estudo na plataforma.
-
-**🟩 Banner Personalizado**
-
-- Permite colocar um banner visual próprio dentro da interface.
-
-**🟦 Logo RGB**
-
-- Aplica um efeito RGB no logo, deixando o visual mais chamativo.
-
-**🟩 Modo Escuro**
-
-- Ativa o tema dark para uma experiência mais confortável aos olhos.
-
-**🟦 onek0Js**
-
-- Função extra que adiciona animações/efeitos personalizados no layout.
-
-**🟩 Custom Username**
-
-- Permite substituir o nome exibido por um username personalizado.
-
-**🟦 Custom PFP**
-
-- Permite definir uma imagem de perfil personalizada.
-
-- Recreated by cyberhacks & davizinzknn
-
-Thank you all for your support over the last few months.
-
+Recreated by **CyberHacks** & **Davizinzkn**
