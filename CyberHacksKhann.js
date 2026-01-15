@@ -3,10 +3,12 @@ let isDev = false;
 
 let repoPath;
 
+const branch = isDev ? "dev" : "main";
+
 const availableCDNs = [
-    `https://raw.githubusercontent.com/Niximkk/CyberHacksKhann/refs/heads/${isDev ? "dev" : "main"}/`,
-    `https://cdn.jsdelivr.net/gh/niximkk/CyberHacksKhann@${isDev ? "dev" : "master"}/`,
-    `https://cdn.statically.io/gh/Niximkk/CyberHacksKhann/refs/heads/${isDev ? "dev" : "main"}/`
+    `https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/${branch}/`,
+    `https://cdn.jsdelivr.net/gh/davizinzknVkv/CyberHacksKhann@${branch}/`,
+    `https://cdn.statically.io/gh/davizinzknVkv/CyberHacksKhann/${branch}/`
 ];
 
 let device = {
