@@ -56,25 +56,18 @@ O usuário reconhece que:
 
 ## 🚀 Instalação
 
-### Stable
+🙂 Stable:
 ```js
-javascript:fetch("https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/refs/heads/main/CyberHacksKhann.js").then(t=>t.text()).then(eval);
-
+javascript:fetch("https://cdn.jsdelivr.net/gh/niximkk/khanware@master/Khanware.js").then(t=>t.text()).then(eval);
+```
 🔧 Dev (beta):
-## Dev (Beta)
-Versão de desenvolvimento destinada a testes e validações de novas funções.
-🔧 Dev (beta):
-JavaScript:
 ```js
-javascript:fetch("https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/refs/heads/main/CyberHacksKhann.js").then(t=>t.text()).then(eval);
-
-## Minimal (Beta)
-
-Versão simplificada e mais leve, focada em desempenho.
-
-JavaScript:
+javascript:fetch("https://cdn.jsdelivr.net/gh/niximkk/khanware@dev/Khanware.js").then(t=>t.text()).then(eval);
+```
+🪶 Minimal (beta):
 ```js
-javascript:fetch("https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/refs/heads/main/CyberHacksKhannMinimal.js").then(t=>t.text()).then(eval);
+javascript:fetch("https://cdn.jsdelivr.net/gh/niximkk/khanware@master/khanwareMinimal.js").then(t=>t.text()).then(eval);
+```
 
 ## 📝 Observações
 
@@ -90,5 +83,6 @@ Foco total em estabilidade e desempenho.
 Discord: https://discord.gg/2cK8gymMwZ
 
 ---
-
-Recreated by **CyberHacks** & **Davizinzkn**
+> 💠 Doação via pix:
+> https://livepix.gg/davizinzkn
+> Recreated by **CyberHacks** & **Davizinzkn**
