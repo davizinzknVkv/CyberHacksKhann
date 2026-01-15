@@ -58,15 +58,15 @@ O usuário reconhece que:
 
 🙂 Stable:
 ```js
-javascript:fetch("https://cdn.jsdelivr.net/gh/niximkk/khanware@master/Khanware.js").then(t=>t.text()).then(eval);
+javascript:fetch("https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/refs/heads/main/CyberHacksKhann.js").then(t=>t.text()).then(eval);
 ```
 🔧 Dev (beta):
 ```js
-javascript:fetch("https://cdn.jsdelivr.net/gh/niximkk/khanware@dev/Khanware.js").then(t=>t.text()).then(eval);
+javascript:fetch("https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/refs/heads/main/CyberHacksKhann.js").then(t=>t.text()).then(eval);
 ```
 🪶 Minimal (beta):
 ```js
-javascript:fetch("https://cdn.jsdelivr.net/gh/niximkk/khanware@master/khanwareMinimal.js").then(t=>t.text()).then(eval);
+javascript:fetch("https://raw.githubusercontent.com/davizinzknVkv/CyberHacksKhann/refs/heads/main/CyberHacksKhannMinimal.js").then(t=>t.text()).then(eval);
 ```
 
 ## 📝 Observações
