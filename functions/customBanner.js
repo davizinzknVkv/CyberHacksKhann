@@ -1,9 +1,9 @@
 const phrases = [ 
-    "[🎅] Chora Seduc Lixo./nao tenta derruba felipe seduc",
-    "[🎄] Fuck Gov",
+    "[🍂] Chora Seduc Lixo./nao tenta derruba felipe seduc",
+    "[🩻] Fuck Gov",
     "[🎁] CyberHacksKhan on top.",
     "[☃️] davizinzkn said hello!",
-    "[🎅] Deus, eu queria ter o CyberHacks.",
+    "[😈] Deus, eu queria ter o CyberHacks.",
     "[🎄] Fique bom, pegue CyberHacksKhann!",
     "[🎁] cyberhackskhan.space goes brrrrr" 
 ];

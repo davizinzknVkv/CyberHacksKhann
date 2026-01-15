@@ -1,4 +1,3 @@
-const logoUrl = "https://github.com/davizinzknVkv/ScrotKhan1/blob/main/logo.png";
 const setFeatureByPath = (path, value) => { let obj = window; const parts = path.split('.'); while (parts.length > 1) obj = obj[parts.shift()]; obj[parts[0]] = value; }
 
 function addFeature(features) {
@@ -63,15 +62,14 @@ function handleInput(ids, callback = null) {
 
 /* Watermark */
 Object.assign(watermark.style, {
-    position: 'fixed', top: '0', left: '85%', width: '170px', height: '36px', backgroundColor: 'rgba(34,139,34,0.7)',
-    color: '#FFD700', fontSize: '16px', fontFamily: 'MuseoSans, sans-serif', display: 'flex', justifyContent: 'space-between', alignItems: 'center', 
-    cursor: 'default', userSelect: 'none', padding: '0 12px',  borderRadius: '12px', zIndex: '1001', transition: 'transform 0.3s ease',
-    border: '2px solid #B22222', boxShadow: '0 0 8px #B22222',
+    position: 'fixed', top: '0', left: '85%', width: '150px', height: '30px', backgroundColor: 'RGB(0,0,0,0.5)',
+    color: 'white', fontSize: '15px', fontFamily: 'MuseoSans, sans-serif', display: 'flex', justifyContent: 'space-between', alignItems: 'center', 
+    cursor: 'default', userSelect: 'none', padding: '0 10px',  borderRadius: '10px', zIndex: '1001', transition: 'transform 0.3s ease'
 });
 
-if (device.mobile) watermark.style.left = '65%'
+if (device.mobile) watermark.style.left = '55%'
 
-watermark.innerHTML = `<span style="text-shadow: 0 0 6px #FFD700, 0 0 12px #B22222;">🎄 CyberHacksKhan 🎅</span> <span style="color:#FFD700; padding-left:6px; font-family: Arial, sans-serif; font-size:12px">${ver}</span>`;
+watermark.innerHTML = `<span style="text-shadow: -1px 0.5px 0 #72ff72, -2px 0px 0 #2f672e;">HCK</span> <span style="color:gray; padding-left:2px; font-family: Arial, sans-serif; font-size:10px">${ver}</span>`;
 
 document.body.appendChild(watermark);
 
@@ -84,54 +82,43 @@ document.addEventListener('mousemove', e => { if (isDragging) { let newX = Math.
 
 /* Dropdown */
 Object.assign(dropdownMenu.style, {
-    position: 'absolute', top: '100%', left: '0', width: '150px', backgroundColor: 'rgba(34,139,34,0.85)',
-    borderRadius: '10px', color: 'white', fontSize: '12px', fontFamily: 'Monospace, sans-serif',
-    display: 'none', flexDirection: 'column', zIndex: '1000', padding: '6px', cursor: 'default',
-    userSelect: 'none', transition: 'transform 0.3s ease', backdropFilter: 'blur(2px)', WebkitBackdropFilter: 'blur(2px)',
-    border: '2px solid #B22222', boxShadow: '0 0 8px #B22222', gap: '6px',
+    position: 'absolute', top: '100%', left: '0', width: '160px', backgroundColor: 'rgba(0,0,0,0.3)',
+    borderRadius: '10px', color: 'white', fontSize: '13px', fontFamily: 'Monospace, sans-serif',
+    display: 'none', flexDirection: 'column', zIndex: '1000', padding: '5px', cursor: 'default',
+    userSelect: 'none', transition: 'transform 0.3s ease', backdropFilter: 'blur(2px)', WebkitBackdropFilter: 'blur(2px)'
 });
 
-const style = document.createElement('style');
-style.innerHTML = `
-    input[type="checkbox"] {appearance: none; width: 13px; height: 13px; background-color: #B22222;
-    border: 1px solid #FFD700; border-radius: 3px; margin-right: 5px; cursor: pointer;}
-    input[type="checkbox"]:checked {background-color: #228B22; border-color: #FFD700;}
-    input[type="text"], input[type="number"], input[type="range"] {width: calc(100% - 8px); border: 1px solid #B22222; 
-    color: #FFD700; accent-color: #228B22; background-color: #222; padding: 3px; border-radius: 3px; background: none; margin-bottom: 5px; font-size: 12px;}
-    label {display: flex; align-items: center; color: #FFD700; padding-top: 3px; margin-bottom: 5px; font-size: 12px;}
-`;
-dropdownMenu.appendChild(style);
-
-dropdownMenu.innerHTML += `
+dropdownMenu.innerHTML = `
     <style>
-        input[type="checkbox"] {appearance: none; width: 13px; height: 13px; background-color: #153F4D;
+        input[type="checkbox"] {appearance: none; width: 15px; height: 15px; background-color: #3a3a3b;
         border: 1px solid #acacac; border-radius: 3px; margin-right: 5px; cursor: pointer;}
-        input[type="checkbox"]:checked {background-color: #45C6D1; border-color: #45C6D1;}
-        input[type="text"], input[type="number"], input[type="range"] {width: calc(100% - 8px); border: 1px solid #153F4D; 
-        color: white; accent-color: #45C6D1; background-color: #45C6D1; padding: 3px; border-radius: 3px; background: none; margin-bottom: 5px; font-size: 12px;}
-        label {display: flex; align-items: center; color: #153F4D; padding-top: 3px; margin-bottom: 5px; font-size: 12px;}
+        input[type="checkbox"]:checked {background-color: #540b8a; border-color: #720fb8;}
+        input[type="text"], input[type="number"], input[type="range"] {width: calc(100% - 10px); border: 1px solid #343434; 
+        color: white; accent-color: #540b8a; background-color: #540b8a; padding: 3px; border-radius: 3px; background: none;}
+        label {display: flex; align-items: center; color: #3a3a3b; padding-top: 3px;}
     </style>
 `;
 
 watermark.appendChild(dropdownMenu);
 
 let featuresList = [
-    { name: 'questionSpoof', type: 'checkbox', variable: 'features.questionSpoof', attributes: 'checked', labeled: true, label: 'Falsificar Questão' },
-    { name: 'videoSpoof', type: 'checkbox', variable: 'features.videoSpoof', attributes: 'checked', labeled: true, label: 'Falsificar Vídeo' },
-    { name: 'showAnswers', type: 'checkbox', variable: 'features.showAnswers', labeled: true, label: 'Revelar Respostas' },
-    { name: 'autoAnswer', type: 'checkbox', variable: 'features.autoAnswer', dependent: 'autoAnswerDelay,nextRecomendation,repeatQuestion', labeled: true, label: 'Responder Automaticamente' },
-    { name: 'repeatQuestion', className: 'repeatQuestion', type: 'checkbox', variable: 'features.repeatQuestion', attributes: 'style="display:none;"', labeled: true, label: 'Repetir Questão' },
-    { name: 'nextRecomendation', className: 'nextRecomendation', type: 'checkbox', variable: 'features.nextRecomendation', attributes: 'style="display:none;"', labeled: true, label: 'Recomendações' },
+    { name: 'questionSpoof', type: 'checkbox', variable: 'features.questionSpoof', attributes: 'checked', labeled: true, label: `${t('question_spoof')}` },
+    { name: 'videoSpoof', type: 'checkbox', variable: 'features.videoSpoof', attributes: 'checked', labeled: true, label: `${t('video_spoof')}` },
+    { name: 'showAnswers', type: 'checkbox', variable: 'features.showAnswers', labeled: true, label: `${t('answer_reveal')}` },
+    { name: 'autoAnswer', type: 'checkbox', variable: 'features.autoAnswer', dependent: 'autoAnswerDelay,nextRecomendation,repeatQuestion', labeled: true, label: `${t('auto_answer')}` },
+    { name: 'repeatQuestion', className: 'repeatQuestion', type: 'checkbox', variable: 'features.repeatQuestion', attributes: 'style="display:none;"', labeled: true, label: `${t('repeat_question')}` },
+    { name: 'nextRecomendation', className: 'nextRecomendation', type: 'checkbox', variable: 'features.nextRecomendation', attributes: 'style="display:none;"', labeled: true, label: `${t('next_recommendation')}` },
     { name: 'autoAnswerDelay', className: 'autoAnswerDelay', type: 'range', variable: 'features.autoAnswerDelay', attributes: 'style="display:none;" min="1" max="3" value="1"', labeled: false },
-    { name: 'minuteFarm', type: 'checkbox', variable: 'features.minuteFarmer', labeled: true, label: 'Fazenda de Minutos' },
-    { name: 'customBanner', type: 'checkbox', variable: 'features.customBanner', labeled: true, label: 'Banner Personalizado' },
-    { name: 'rgbLogo', type: 'checkbox', variable: 'features.rgbLogo', labeled: true, label: 'Logo RGB' },
-    { name: 'darkMode', type: 'checkbox', variable: 'features.darkMode', attributes: 'checked', labeled: true, label: 'Modo Escuro' },
-    { name: 'onekoJs', type: 'checkbox', variable: 'features.onekoJs', labeled: true, label: 'onekoJs' },
-    { name: 'Custom Username', type: 'nonInput', label: 'Usuário Personalizado' },
-    { name: 'customName', type: 'text', variable: 'featureConfigs.customUsername', attributes: 'autocomplete="off"', label: 'Nome' },
-    { name: 'Custom pfp', type: 'nonInput', label: 'Foto Personalizada' },
-    { name: 'customPfp', type: 'text', variable: 'featureConfigs.customPfp', attributes: 'autocomplete="off"', label: 'Foto' }
+    { name: 'workerBees', type: 'checkbox', variable: 'features.workerBees', labeled: true, label: `${t('worker_bee')}` },
+    { name: 'minuteFarm', type: 'checkbox', variable: 'features.minuteFarmer', labeled: true, label: `${t('minute_farm')}` },
+    { name: 'customBanner', type: 'checkbox', variable: 'features.customBanner', labeled: true, label: `${t('custom_banner')}` },
+    { name: 'rgbLogo', type: 'checkbox', variable: 'features.rgbLogo', labeled: true, label: `${t('rgb_logo')}` },
+    { name: 'darkMode', type: 'checkbox', variable: 'features.darkMode', attributes: 'checked', labeled: true, label: `${t('dark_mode')}` },
+    { name: 'onekoJs', type: 'checkbox', variable: 'features.onekoJs', labeled: true, label: `${t('oneko_js')}` },
+    { name: `${t('custom_user')}`, type: 'nonInput' },
+    { name: 'customName', type: 'text', variable: 'featureConfigs.customUsername', attributes: 'autocomplete="off"' },
+    { name: `${t('custom_pfp')}`, type: 'nonInput' },
+    { name: 'customPfp', type: 'text', variable: 'featureConfigs.customPfp', attributes: 'autocomplete="off"' }
   ];
   
 
@@ -139,8 +126,8 @@ featuresList.push({ name: `${user.username} - UID: ${user.UID}`, type: 'nonInput
 
 addFeature(featuresList);
 
-handleInput(['questionSpoof', 'videoSpoof', 'showAnswers', 'nextRecomendation', 'repeatQuestion', 'minuteFarm', 'customBanner', 'rgbLogo']);
-handleInput(['customName', 'customPfp'])
+handleInput(['questionSpoof', 'videoSpoof', 'showAnswers', 'nextRecomendation', 'repeatQuestion', 'minuteFarm', 'customBanner', 'rgbLogo', 'workerBees']);
+handleInput(['customName', 'customPfp']);
 handleInput('autoAnswer', checked => checked && !features.questionSpoof && (document.querySelector('[setting-data="features.questionSpoof"]').checked = features.questionSpoof = true));
 handleInput('autoAnswerDelay', value => value && (featureConfigs.autoAnswerDelay = 4 - value));
 handleInput('darkMode', checked => checked ? (DarkReader.setFetchMethod(window.fetch), DarkReader.enable()) : DarkReader.disable());

@@ -1,3 +1,5 @@
+/* Broken, no fix available yet. 
+
 const originalParse = JSON.parse;
 
 JSON.parse = function (e, t) {
@@ -14,8 +16,8 @@ JSON.parse = function (e, t) {
                             if (widget.options && widget.options.choices) {
                                 widget.options.choices.forEach(choice => {
                                     if (choice.correct) {
-                                        choice.content = "🎁 " + choice.content;
-                                        sendToast("🎄 Respostas hackeadas.", 1000);                
+                                        choice.content = "✅ " + choice.content;
+                                        sendToast(`🔓 ${t('revealed_answer')}`, 1000);                
                                     }
                                 });
                             }
@@ -25,6 +27,6 @@ JSON.parse = function (e, t) {
                 }
             });
         }
-    } catch (e) { debug(`🚨 Error @ answerRevealer.js\n${e}`); }
+    } catch (e) { debug(`🚨 ${t('error_at')} answerRevealer.js\n${e}`); }
     return body;
-};
+};*/

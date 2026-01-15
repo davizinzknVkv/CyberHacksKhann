@@ -5,10 +5,10 @@ const baseSelectors = [
     `._1wi2tma4`
 ];
 
-CYBERHACKSDominates = true;
+CYBERHACKSKHANDominates = true;
 
 (async () => { 
-    while (CYBERHACKSDominates) {
+    while (CYBERHACKSKHANDominates) {
         if (features.autoAnswer && features.questionSpoof) {
             
             const selectorsToCheck = [...baseSelectors];

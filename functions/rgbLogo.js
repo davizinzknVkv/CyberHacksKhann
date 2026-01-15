@@ -4,11 +4,10 @@ plppdo.on('domChanged', () => {
     styleElement.className = "RGBLogo"
     styleElement.textContent = `
         @keyframes colorShift {
-            0% { fill: rgb(220, 20, 60); }      /* Vermelho Natal */
-            33% { fill: rgb(34, 139, 34); }     /* Verde Natal */
-            66% { fill: rgb(255, 255, 255); }   /* Branco Neve */
-            80% { fill: rgb(255, 215, 0); }     /* Dourado */
-            100% { fill: rgb(220, 20, 60); }    /* Vermelho Natal */
+            0% { fill: rgb(255, 0, 0); }
+            33% { fill: rgb(0, 255, 0); }
+            66% { fill: rgb(0, 0, 255); }
+            100% { fill: rgb(255, 0, 0); }
         }   
     `;
     if(features.rgbLogo&&khanLogo){
@@ -17,3 +16,6 @@ plppdo.on('domChanged', () => {
         khanLogo.style.animation = 'colorShift 5s infinite';
     }
 })
+
+// Why is this a thing?
+// Dear me from the past: Kys, this shi is useful af.
